@@ -1,0 +1,24 @@
+{
+  "name": "quantonium-docs",
+  "version": "1.0.0",
+  "description": "User level documentation of Quantonium Editor.",
+  "main": "quantonium.js",
+  "scripts": {
+    "start": "node quantonium.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preetvadaliya/Quantonium-Docs.git"
+  },
+  "author": "Preet P. Vadaliya",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/preetvadaliya/Quantonium-Docs/issues"
+  },
+  "homepage": "https://github.com/preetvadaliya/Quantonium-Docs#readme",
+  "dependencies": {
+    "json-to-pretty-yaml": "^1.2.2",
+    "repeat-string": "^1.6.1",
+    "turndown": "^7.0.0"
+  }
+}

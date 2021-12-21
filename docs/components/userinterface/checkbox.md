@@ -1,0 +1,241 @@
+<!--
+  Copyright © 2021-2021 Quantonium, All rights reserved
+  Released under the GPL License, Version 3.0
+-->
+
+# CheckBox
+
+Checkbox that raises an event when the user clicks on it. There are many properties affecting its appearance that can be set in the Designer or Blocks Editor.
+
+---
+
+## Designer Properties
+
+---
+
+### BackgroundColor
+
+| Property Name   | Editor Type | Default Value |
+| :-------------- | :---------- | :------------ |
+| BackgroundColor | color       | &H00FFFFFF    |
+
+### Checked
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| Checked       | boolean     | False         |
+
+### Enabled
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| Enabled       | boolean     | True          |
+
+### FontBold
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| FontBold      | boolean     | False         |
+
+### FontItalic
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| FontItalic    | boolean     | False         |
+
+### FontSize
+
+| Property Name | Editor Type        | Default Value |
+| :------------ | :----------------- | :------------ |
+| FontSize      | non_negative_float | 14.0          |
+
+### FontTypeface
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| FontTypeface  | typeface    | 0             |
+
+### Text
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| Text          | string      |               |
+
+### TextColor
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| TextColor     | color       | &HFF000000    |
+
+### Visible
+
+| Property Name | Editor Type | Default Value |
+| :------------ | :---------- | :------------ |
+| Visible       | visibility  | True          |
+
+## Events
+
+---
+
+### Changed
+
+<div block-type = "component_event" component-selector = "CheckBox" event-selector = "Changed" id = "checkbox-changed"></div>
+
+User tapped and released the CheckBox.
+
+### GotFocus
+
+<div block-type = "component_event" component-selector = "CheckBox" event-selector = "GotFocus" id = "checkbox-gotfocus"></div>
+
+CheckBox became the focused component.
+
+### LostFocus
+
+<div block-type = "component_event" component-selector = "CheckBox" event-selector = "LostFocus" id = "checkbox-lostfocus"></div>
+
+CheckBox stopped being the focused component.
+
+## Block Properties
+
+---
+
+### BackgroundColor
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "BackgroundColor" property-type = "get" id = "get-checkbox-backgroundcolor"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "BackgroundColor" property-type = "set" id = "set-checkbox-backgroundcolor"></div>
+
+The background color of the CheckBox as an alpha-red-green-blue integer.
+
+| Param Name      | IO Type                            |
+| :-------------- | :--------------------------------- |
+| BackgroundColor | <span class="number">number</span> |
+
+### Checked
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Checked" property-type = "get" id = "get-checkbox-checked"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Checked" property-type = "set" id = "set-checkbox-checked"></div>
+
+True if the box is checked, false otherwise.
+
+| Param Name | IO Type                              |
+| :--------- | :----------------------------------- |
+| Checked    | <span class="boolean">boolean</span> |
+
+### Enabled
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Enabled" property-type = "get" id = "get-checkbox-enabled"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Enabled" property-type = "set" id = "set-checkbox-enabled"></div>
+
+True if the CheckBox is active and clickable.
+
+| Param Name | IO Type                              |
+| :--------- | :----------------------------------- |
+| Enabled    | <span class="boolean">boolean</span> |
+
+### FontSize
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "FontSize" property-type = "get" id = "get-checkbox-fontsize"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "FontSize" property-type = "set" id = "set-checkbox-fontsize"></div>
+
+Specifies the text font size of the CheckBox in scale-independent pixels.
+
+| Param Name | IO Type                            |
+| :--------- | :--------------------------------- |
+| FontSize   | <span class="number">number</span> |
+
+### Height
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Height" property-type = "get" id = "get-checkbox-height"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Height" property-type = "set" id = "set-checkbox-height"></div>
+
+Specifies the vertical height of the CheckBox, measured in pixels.
+
+| Param Name | IO Type                            |
+| :--------- | :--------------------------------- |
+| Height     | <span class="number">number</span> |
+
+### HeightPercent
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "HeightPercent" property-type = "set" id = "set-checkbox-heightpercent"></div>
+
+Specifies the vertical height of the CheckBox as a percentage of the height of the Screen.
+
+| Param Name    | IO Type                            |
+| :------------ | :--------------------------------- |
+| HeightPercent | <span class="number">number</span> |
+
+### Text
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Text" property-type = "get" id = "get-checkbox-text"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Text" property-type = "set" id = "set-checkbox-text"></div>
+
+Specifies the text displayed by the CheckBox.
+
+| Param Name | IO Type                        |
+| :--------- | :----------------------------- |
+| Text       | <span class="text">text</span> |
+
+### TextColor
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "TextColor" property-type = "get" id = "get-checkbox-textcolor"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "TextColor" property-type = "set" id = "set-checkbox-textcolor"></div>
+
+Specifies the text color of the CheckBox as an alpha-red-green-blue integer.
+
+| Param Name | IO Type                            |
+| :--------- | :--------------------------------- |
+| TextColor  | <span class="number">number</span> |
+
+### Visible
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Visible" property-type = "get" id = "get-checkbox-visible"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Visible" property-type = "set" id = "set-checkbox-visible"></div>
+
+Specifies whether the CheckBox should be visible on the screen. Value is true if the CheckBox is showing and false if hidden.
+
+| Param Name | IO Type                              |
+| :--------- | :----------------------------------- |
+| Visible    | <span class="boolean">boolean</span> |
+
+### Width
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Width" property-type = "get" id = "get-checkbox-width"></div>
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "Width" property-type = "set" id = "set-checkbox-width"></div>
+
+Specifies the horizontal width of the CheckBox, measured in pixels.
+
+| Param Name | IO Type                            |
+| :--------- | :--------------------------------- |
+| Width      | <span class="number">number</span> |
+
+### WidthPercent
+
+<div block-type = "component_set_get" component-selector = "CheckBox" property-selector = "WidthPercent" property-type = "set" id = "set-checkbox-widthpercent"></div>
+
+Specifies the horizontal width of the CheckBox as a percentage of the width of the Screen.
+
+| Param Name   | IO Type                            |
+| :----------- | :--------------------------------- |
+| WidthPercent | <span class="number">number</span> |
+
+## Component
+
+---
+
+### CheckBox
+
+<div block-type = "component_component_block" component-selector = "CheckBox" id = "component-checkbox"></div>
+
+Component CheckBox.
+
+Return Type : <span class="component">component</span>
+
